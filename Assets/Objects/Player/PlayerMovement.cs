@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float groundDrag;
 
-    [Header("Jum~p Control")]
+    [Header("Jump Control")]
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpDrag;
     [SerializeField] private float jumpCooldown;
@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     private void GetInput() {
         horizInput = Input.GetAxis("Horizontal");
         vertInput = Input.GetAxis("Vertical");
-        if (Input.GetAxis("Sprint") > 0) {
+        if (Input.GetAxis("Sprint") > 0) { 
             vertInput *= sprintMultiplier;
         }
 
@@ -103,3 +103,4 @@ public class PlayerMovement : MonoBehaviour
         canJump = true;
     }
 }
+
