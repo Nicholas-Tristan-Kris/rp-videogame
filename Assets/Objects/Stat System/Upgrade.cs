@@ -17,5 +17,8 @@ public class Upgrade
     [Tooltip("The amount of the upgrade")]
     public float amount;
 
+    [Tooltip("The icon of the upgrade")]
+    public Sprite Icon;
+
     
 }
