@@ -4,4 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/map_edit.unity
+    guid: 001cc8343f93b9e4da24083cf46b4b60
+  - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: c9baf9435cda07b4ca6110d67b3ed1de
+  - enabled: 1
+    path: Assets/Scenes/nicholas_editing.unity
+    guid: 465a89014e1099540aa8d62b070bb607
+  m_configObjects: {}

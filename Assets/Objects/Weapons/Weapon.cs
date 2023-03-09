@@ -24,6 +24,9 @@ public class Weapon : MonoBehaviour
 
     protected virtual void Start() {
         weaponCollider = GetComponent<Collider>();
+        if (weaponCollider == null) {
+            weaponCollider = GetComponentInChildren<Collider>();
+        }
         weaponCollider.enabled = false;
     }
 
