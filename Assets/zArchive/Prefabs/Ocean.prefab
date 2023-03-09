@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5002365490507706296}
   - component: {fileID: 5002365490507706295}
   - component: {fileID: 5002365490507706294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ocean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,9 +26,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5002365490507706293}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6250, y: 120, z: 6196}
   m_LocalScale: {x: 17, y: 1, z: 17}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,14 +53,16 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8538bd626cb3e80478f62e319f75e337, type: 2}
+  - {fileID: 2100000, guid: 2320d7fee5cb5024ea3ab9c0c7cc853d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,6 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5002365490507706294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6a6df342b52d24092cf6bbb590c535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveHeight: 1.5
-  waveFrequency: 0.5
-  waveLength: 0.5
+  waveHeight: 0.5
+  waveFrequency: 0.15
+  waveLength: 0.25
   waveOriginPosition: {x: 0, y: 0, z: 0}
