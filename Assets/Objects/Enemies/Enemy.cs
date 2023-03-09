@@ -11,14 +11,15 @@ public class Enemy : MonoBehaviour
 
     [Header("Animations")]
     [SerializeField] private Animator animator;
-    [SerializeField] private AnimationClip attackAnimation;
-    [SerializeField] private AnimationClip deathAnimation;
-    [SerializeField] private AnimationClip takeDamage;
-    [SerializeField] private AnimationClip idleAnimation;
-    [SerializeField] private AnimationClip walkAnimation;
+    //everything below will be implemented in an animation controller
+    // [SerializeField] private AnimationClip attackAnimation;
+    // [SerializeField] private AnimationClip deathAnimation;
+    // [SerializeField] private AnimationClip takeDamage;
+    // [SerializeField] private AnimationClip idleAnimation;
+    // [SerializeField] private AnimationClip walkAnimation;
 
     public void TakeDamage(int damage) {
-        animator.Play(takeDamage.name);
+        animator.SetTrigger("TakeDamage");
         health -= damage;
         if (health <= 0) {
             Die();
@@ -26,17 +27,19 @@ public class Enemy : MonoBehaviour
     }
 
     private void Die() {
-        animator.Play(deathAnimation.name);
+        animator.SetTrigger("Die");
+
+        //TODO wait until death animation is finished to destroy the object
         Destroy(gameObject);
     }
 
     private void Attack() {
-        animator.Play(attackAnimation.name);
+        animator.SetTrigger("Attack");
     }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {
-            other.GetComponent<PlayerManager>().TakeDamage(damage);
+            other.gameObject.GetComponent<PlayerManager>().TakeDamage(damage);
         }
     }
 

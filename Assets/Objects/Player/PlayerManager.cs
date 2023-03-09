@@ -6,7 +6,6 @@ using UnityEditor;
 [ExecuteInEditMode]
 public class PlayerManager : MonoBehaviour
 {
-
     [Header("Stats")]
     [Tooltip("All of the different stats that a player has")]
     [SerializeField] private List<Stat> stats;
@@ -32,6 +31,7 @@ public class PlayerManager : MonoBehaviour
         {
             Attack();
         }
+        
     }
 
     private void Attack() {
