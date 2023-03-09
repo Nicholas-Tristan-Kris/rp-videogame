@@ -57,7 +57,7 @@ MonoBehaviour:
     opacityStep: 0.025
     densityStep: 1
     paintModeSelectorType: 0
-    useMultiSplatsSelector: 1
+    useMultiSplatsSelector: 0
   splineTools:
     anchorColor: {r: 1, g: 0, b: 0, a: 1}
     segmentColor: {r: 1, g: 0, b: 0, a: 1}
