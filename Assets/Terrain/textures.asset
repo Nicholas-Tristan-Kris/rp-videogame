@@ -19,37 +19,13 @@ MonoBehaviour:
     tileOffset: {x: 0, y: 0}
     metallic: 0
     smoothness: 0
-  - texture: {fileID: 2800000, guid: 01440cca9ed29bb468c59995ca6bd964, type: 3}
-    normalMap: {fileID: 0}
-    tileSize: {x: 1, y: 1}
-    tileOffset: {x: 0, y: 0}
-    metallic: 0
-    smoothness: 0
-  - texture: {fileID: 2800000, guid: 0515fad34622f2c449cae5e312e80936, type: 3}
-    normalMap: {fileID: 0}
-    tileSize: {x: 1, y: 1}
-    tileOffset: {x: 0, y: 0}
-    metallic: 0
-    smoothness: 0
-  - texture: {fileID: 2800000, guid: b5db5e657f2f9f24099dca01e41ef27c, type: 3}
-    normalMap: {fileID: 0}
-    tileSize: {x: 1, y: 1}
-    tileOffset: {x: 0, y: 0}
-    metallic: 0
-    smoothness: 0
-  - texture: {fileID: 2800000, guid: bac2c801aa54b334daa6d87ad8db11b6, type: 3}
-    normalMap: {fileID: 0}
-    tileSize: {x: 1, y: 1}
-    tileOffset: {x: 0, y: 0}
-    metallic: 0
-    smoothness: 0
   - texture: {fileID: 2800000, guid: 3c5867007635c434d8909cffdf6303f4, type: 3}
     normalMap: {fileID: 0}
     tileSize: {x: 1, y: 1}
     tileOffset: {x: 0, y: 0}
     metallic: 0
     smoothness: 0
-  - texture: {fileID: 2800000, guid: f3d853b3e733ac940a0d9f696112bbb3, type: 3}
+  - texture: {fileID: 2800000, guid: 01440cca9ed29bb468c59995ca6bd964, type: 3}
     normalMap: {fileID: 0}
     tileSize: {x: 1, y: 1}
     tileOffset: {x: 0, y: 0}
