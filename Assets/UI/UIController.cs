@@ -10,12 +10,12 @@ public class UIController : MonoBehaviour
     [SerializeField] private Health health;
     [SerializeField] private Stamina stamina;
     [SerializeField] private GameObject inventory;
-    private PlayerManager playerManager;
+    private PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerManager = FindObjectOfType<PlayerManager>();
+        playerController = FindObjectOfType<PlayerController>();
     }
 
     // Update is called once per frame

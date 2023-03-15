@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor.Animations;
 
 public class Weapon : MonoBehaviour
 {
@@ -15,10 +16,10 @@ public class Weapon : MonoBehaviour
     [SerializeField] protected float cooldown;
     [SerializeField] protected Sprite icon;
 
-    [Header("User Animations")]
-    [SerializeField] public AnimationClip userAnimation;
-    [SerializeField] public AnimationClip sheath;
-    [SerializeField] public AnimationClip unsheath;
+    [Header("Player Animations")]
+    [SerializeField] public Motion attack;
+    [SerializeField] public Motion sheath;
+    [SerializeField] public Motion unsheath;
 
     protected Collider weaponCollider;
 
@@ -28,6 +29,10 @@ public class Weapon : MonoBehaviour
             weaponCollider = GetComponentInChildren<Collider>();
         }
         weaponCollider.enabled = false;
+    }
+
+    protected virtual void Use() {
+
     }
 
 }
