@@ -20,7 +20,7 @@ public class Sword : Weapon
     }
 
     //deal damage to the target on collision with a tagged enemy
-    private void OnTriggerEnter(Collider other) {
+    void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Enemy")) {
             other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
         }

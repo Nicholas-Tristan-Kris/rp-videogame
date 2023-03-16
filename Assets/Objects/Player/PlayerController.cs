@@ -18,9 +18,9 @@ public class PlayerController : MonoBehaviour
 
     [Header("Animation")]
     [SerializeField] private AnimatorController animatorController;
-    [SerializeField] private Transform rightHand;
-    [SerializeField] private Transform leftHand;
-    [SerializeField] private Transform back;
+    // [SerializeField] private Transform rightHand;
+    // [SerializeField] private Transform leftHand;
+    // [SerializeField] private Transform back;
     
     [Header("Movement")]
     [SerializeField] private float moveSpeed;

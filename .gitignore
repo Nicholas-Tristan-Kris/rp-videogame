@@ -73,3 +73,4 @@ crashlytics-build.properties
 
 ProjectSettings/boot.config
 ProjectSettings/ProjectVersion.txt
+ProjectSettings/Packages/com.unity.services.mediation/Settings.json
