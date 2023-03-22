@@ -1,4 +1,4 @@
-TODO: get knife icon, get throwing knife animations
 TODO: setup skilltree
+TODO: get knife icon, get throwing knife animations
 TODO: get throwing knife animation  
 TODO: create pickup function in player controller

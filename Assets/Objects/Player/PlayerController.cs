@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody rb;
 
-    // Start is called before the first frame update
+    // Start is called before the first frame   date
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
 
         //TODO shield maybe?
         foreach (ChildAnimatorStateMachine casm in animatorController.layers[0].stateMachine.stateMachines) {
-            if (casm.stateMachine.name == "Attack") {
+            if (casm.stateMachine.name == "Weapon") {
                 attackState = casm.stateMachine;
             }
         }
@@ -98,7 +98,8 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-        if (Input.GetAxis("Sheath") > 0) {
+        //if the same button at the current active weapon number is pressed then sheath 
+        if (Input.GetButton(activeWeapon.ToString())) { 
             Sheath();
         }
 
@@ -116,6 +117,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxis("Switch Weapon") != 0) {
             SwitchWeapon(Input.GetAxis("Switch Weapon"));
         }
+
+        if (Input.GetAxis("Pickup") != 0) {
+            Pickup();
+        }
+    }
+
+    private void Pickup() {
+        
     }
 
     private void SwitchWeapon(float val) {
@@ -205,5 +214,9 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float damage) {
         animator.SetTrigger("Hit"); 
         stats.Find(x => x.name == "Health").value -= damage;
+    }
+
+    public Stat GetStat(string name) {
+        return stats.Find(x => x.name == name);
     }
 }
