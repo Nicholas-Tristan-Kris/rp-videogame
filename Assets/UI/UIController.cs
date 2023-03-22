@@ -11,7 +11,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private Fear fear;
     [SerializeField] private Health health;
     [SerializeField] private Stamina stamina;
-    [SerializeField] private GameObject inventory;
+    [SerializeField] private GameObject ui;
     
     private PlayerController playerController;
 
@@ -26,7 +26,7 @@ public class UIController : MonoBehaviour
     {
         if (Input.GetAxis("Inventory") > 0)
         {
-            inventory.SetActive(!inventory.activeSelf);
+            ui.SetActive(!ui.activeSelf);
         }
     }
 }
